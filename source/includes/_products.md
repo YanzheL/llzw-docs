@@ -135,7 +135,7 @@ Remember — You must be authenticated with <code>SELLER</code> role before usin
 
 ## Invalidate a Specific Product
 
-> The above command returns JSON structured like this:
+> The response JSON structured like this:
 
 ```json
 {
