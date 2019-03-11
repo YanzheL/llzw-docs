@@ -201,7 +201,7 @@
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -212,8 +212,6 @@
       <img src="images/logo.png" class="logo" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
         </div>
         <div class="search">
@@ -226,200 +224,544 @@
           </li>
           <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#http-request" class="toc-h2 toc-link" data-title="HTTP Request">HTTP Request</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
-                  </li>
-                  <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#request-parameters" class="toc-h2 toc-link" data-title="Request Parameters">Request Parameters</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#users" class="toc-h1 toc-link" data-title="Users">Users</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#registration" class="toc-h2 toc-link" data-title="Registration">Registration</a>
+                  </li>
+                  <li>
+                    <a href="#real-name-verification" class="toc-h2 toc-link" data-title="Real Name Verification">Real Name Verification</a>
+                  </li>
+                  <li>
+                    <a href="#update-password" class="toc-h2 toc-link" data-title="Update Password">Update Password</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#products" class="toc-h1 toc-link" data-title="Products">Products</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-products" class="toc-h2 toc-link" data-title="Get All Products">Get All Products</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-product" class="toc-h2 toc-link" data-title="Get a Specific Product">Get a Specific Product</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-product" class="toc-h2 toc-link" data-title="Create a Product">Create a Product</a>
+                  </li>
+                  <li>
+                    <a href="#invalidate-a-specific-product" class="toc-h2 toc-link" data-title="Invalidate a Specific Product">Invalidate a Specific Product</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#stocks" class="toc-h1 toc-link" data-title="Stocks">Stocks</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-stocks" class="toc-h2 toc-link" data-title="Get All Stocks">Get All Stocks</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-stock" class="toc-h2 toc-link" data-title="Get a Specific Stock">Get a Specific Stock</a>
+                  </li>
+                  <li>
+                    <a href="#search-stocks-by-parameters" class="toc-h2 toc-link" data-title="Search Stocks by Parameters">Search Stocks by Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#create-a-stock" class="toc-h2 toc-link" data-title="Create a Stock">Create a Stock</a>
+                  </li>
+                  <li>
+                    <a href="#invalidate-a-specific-stock" class="toc-h2 toc-link" data-title="Invalidate a Specific Stock">Invalidate a Specific Stock</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#orders" class="toc-h1 toc-link" data-title="Orders">Orders</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-all-orders" class="toc-h2 toc-link" data-title="Get All Orders">Get All Orders</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-order" class="toc-h2 toc-link" data-title="Get a Specific Order">Get a Specific Order</a>
+                  </li>
+                  <li>
+                    <a href="#search-orders-by-parameters" class="toc-h2 toc-link" data-title="Search Orders by Parameters">Search Orders by Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-order" class="toc-h2 toc-link" data-title="Create an Order">Create an Order</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#generals" class="toc-h1 toc-link" data-title="Generals">Generals</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#standard-response-format" class="toc-h2 toc-link" data-title="Standard Response Format">Standard Response Format</a>
+                  </li>
+                  <li>
+                    <a href="#http-status-codes" class="toc-h2 toc-link" data-title="HTTP Status Codes">HTTP Status Codes</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+            <li><a href='https://github.com/YanzheL/llzw'>LLZW</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the LLZW API! </p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-
-<p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
+<p>You can use our API to access various API endpoints, which can get information on various products, orders, and stocks in our database.</p>
 <h1 id='authentication'>Authentication</h1>
 <blockquote>
-<p>To authorize, use this code:</p>
+<p>The response JSON structured like this:</p>
 </blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
-</blockquote>
-
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
-
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
-
-<p><code>Authorization: meowmeowmeow</code></p>
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint performs login action. After a successful login, the server will send you an authenticated COOKIE which represents all your privileges.</p>
+
+<p>All your subsequent requests will inherit this identity.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
-<h3 id='query-parameters'>Query Parameters</h3>
+<p><code>POST http://example.com/login</code></p>
+<h3 id='request-parameters'>Request Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
 <th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>username</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Your username</td>
 </tr>
 <tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>password</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Your password</td>
 </tr>
 </tbody></table>
-
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
+<h1 id='users'>Users</h1><h2 id='registration'>Registration</h2>
 <blockquote>
-<p>The above command returns JSON structured like this:</p>
+<p>The response JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<p>This endpoint register a new user.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>POST http://example.com/api/v1/users</code></p>
+<h3 id='request-parameters'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>username</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Username, \w+[\w\d]+</td>
+</tr>
+<tr>
+<td>password</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>At least 1 upper case, 1 lower case, 1 digit and 1 symbol, min length = 8</td>
+</tr>
+<tr>
+<td>email</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>min length = 5, max length = 100</td>
+</tr>
+<tr>
+<td>phoneNumber</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>min length = 5, max length = 20</td>
+</tr>
+<tr>
+<td>role</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>One of [ &#39;SELLER&#39;, &#39;USER&#39; ]</td>
+</tr>
+</tbody></table>
+<h2 id='real-name-verification'>Real Name Verification</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific product with id = 1</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code>PATCH http://example.com/api/v1/users/&lt;USERNAME&gt;</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>USERNAME</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Username</td>
+</tr>
+</tbody></table>
+<h3 id='request-parameters-2'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>identityType</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>One of [ &#39;PRC_ID&#39;, &#39;PASSPORT&#39; ]</td>
+</tr>
+<tr>
+<td>identityNumber</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>ID of specified document, min length = 1, max length = 20</td>
+</tr>
+<tr>
+<td>firstName</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>min length = 1, max length = 20</td>
+</tr>
+<tr>
+<td>lastName</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>min length = 1, max length = 20</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with the user you specified before using this API
+</aside>
+<h2 id='update-password'>Update Password</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific product with id = 1</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>PATCH http://example.com/api/v1/users/&lt;USERNAME&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>USERNAME</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Username</td>
+</tr>
+</tbody></table>
+<h3 id='request-parameters-3'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>oldPassword</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Current password</td>
+</tr>
+<tr>
+<td>newPassword</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>New password</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with the user you specified before using this API
+</aside>
+<h1 id='products'>Products</h1><h2 id='get-all-products'>Get All Products</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"seller_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_SELLER"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INTRODUCTION_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"maxDeliveryHours"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ca"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CNAS"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"certId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"seller_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_SELLER"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INTRODUCTION_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10.00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"maxDeliveryHours"</span><span class="p">:</span><span class="w"> </span><span class="s2">"72"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"ca"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CNAS"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"certId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all products.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/products</code></p>
+<h3 id='request-parameters'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Page</td>
+<td>Integer</td>
+<td>False</td>
+<td>0</td>
+<td>The page index from 0</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Integer</td>
+<td>False</td>
+<td>20</td>
+<td>Page size</td>
+</tr>
+</tbody></table>
+<h2 id='get-a-specific-product'>Get a Specific Product</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"seller_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_SELLER"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INTRODUCTION_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.00</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"maxDeliveryHours"</span><span class="p">:</span><span class="w"> </span><span class="mi">72</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ca"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CNAS"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"certId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific product with id = 1</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/products/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>The ID of the kitten to retrieve</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>The ID of the product to retrieve</td>
 </tr>
 </tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='create-a-product'>Create a Product</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"seller_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_SELLER"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NAME_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"introduction"</span><span class="p">:</span><span class="w"> </span><span class="s2">"INTRODUCTION_OF_THIS_PRODUCT"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"price"</span><span class="p">:</span><span class="w"> </span><span class="mf">10.00</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"maxDeliveryHours"</span><span class="p">:</span><span class="w"> </span><span class="mi">72</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"ca"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CNAS"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"certId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a new product.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>POST http://example.com/api/v1/products</code></p>
+<h3 id='request-parameters-2'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>name</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Name of this product</td>
+</tr>
+<tr>
+<td>introduction</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Introduction of this product</td>
+</tr>
+<tr>
+<td>price</td>
+<td>Float</td>
+<td>True</td>
+<td>-</td>
+<td>Price of this product</td>
+</tr>
+<tr>
+<td>ca</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Certificate authority name</td>
+</tr>
+<tr>
+<td>certId</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Qualification certificate id</td>
+</tr>
+<tr>
+<td>maxDeliveryHours</td>
+<td>String</td>
+<td>False</td>
+<td>72</td>
+<td>Max delivery hours allowed of this product</td>
+</tr>
+</tbody></table>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h2 id='invalidate-a-specific-product'>Invalidate a Specific Product</h2>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
 </blockquote>
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
+<p>This endpoint invalidates a specific product, so all stocks of this product will no longer be in the queue for sale.</p>
+
+<p>It will NOT delete it from database.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>DELETE http://example.com/api/v1/products/&lt;ID&gt;</code></p>
 <h3 id='url-parameters-2'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -429,15 +771,662 @@ Remember — a happy kitten is an authenticated kitten!
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>The ID of the kitten to delete</td>
+<td>The ID of the product to invalidate</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
 
-<p>The Kittn API uses the following error codes:</p>
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h1 id='stocks'>Stocks</h1><h2 id='get-all-stocks'>Get All Stocks</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2333</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">6999</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2333</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">7988</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all stocks.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/stocks</code></p>
+<h3 id='request-parameters'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Page</td>
+<td>Integer</td>
+<td>False</td>
+<td>0</td>
+<td>The page index from 0</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Integer</td>
+<td>False</td>
+<td>20</td>
+<td>Page size</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h2 id='get-a-specific-stock'>Get a Specific Stock</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2333</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">7988</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific product with id = 1</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/stocks/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>The ID of the product to retrieve</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h2 id='search-stocks-by-parameters'>Search Stocks by Parameters</h2>
+<blockquote>
+<p>The response JSON structured like this, shows all stocks belongs to product <code>2333</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2333</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">6999</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2333</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">7988</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all stocks that satisfy given parameters</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/stocks</code></p>
+<h3 id='request-parameters-2'>Request Parameters</h3>
+<p>Your should query with at least one parameter from this list.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>product_id</td>
+<td>Integer</td>
+<td>False</td>
+<td>-</td>
+<td>ID of the product it belongs to</td>
+</tr>
+<tr>
+<td>shelfLife</td>
+<td>Integer</td>
+<td>False</td>
+<td>-</td>
+<td>Shelf-Life of the stock</td>
+</tr>
+<tr>
+<td>trackingId</td>
+<td>String</td>
+<td>False</td>
+<td>-</td>
+<td>Tracking ID of this shipment</td>
+</tr>
+<tr>
+<td>carrierName</td>
+<td>String</td>
+<td>False</td>
+<td>-</td>
+<td>Carrier Name of this shipment</td>
+</tr>
+<tr>
+<td>valid</td>
+<td>Boolean</td>
+<td>False</td>
+<td>-</td>
+<td>The status of this stock</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+</aside>
+<h2 id='create-a-stock'>Create a Stock</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"valid"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"product_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID_OF_THE_PRODUCT_IT_BELONGS_TO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"producedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"inboundedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"shelfLife"</span><span class="p">:</span><span class="w"> </span><span class="mi">365</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"totalQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"currentQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">7988</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a new product.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>POST http://example.com/api/v1/stocks</code></p>
+<h3 id='request-parameters-3'>Request Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>productId</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>ID of the product it belongs to</td>
+</tr>
+<tr>
+<td>producedAt</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>The producing date</td>
+</tr>
+<tr>
+<td>shelfLife</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>Shelf-Life of this stock</td>
+</tr>
+<tr>
+<td>totalQuantity</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>Total quantity of stock</td>
+</tr>
+<tr>
+<td>trackingId</td>
+<td>String</td>
+<td>False</td>
+<td>NULL</td>
+<td>Tracking ID of this shipment</td>
+</tr>
+<tr>
+<td>carrierName</td>
+<td>String</td>
+<td>False</td>
+<td>NULL</td>
+<td>Carrier Name of this shipment</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h2 id='invalidate-a-specific-stock'>Invalidate a Specific Stock</h2>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint invalidates a specific stock, so all items from this stock will no longer be in the queue for sale.</p>
+
+<p>It will NOT delete it from database.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>DELETE http://example.com/api/v1/stocks/&lt;ID&gt;</code></p>
+<h3 id='url-parameters-2'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>The ID of the stock to invalidate</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> role before using this API
+</aside>
+<h1 id='orders'>Orders</h1><h2 id='get-all-orders'>Get All Orders</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_CUSTOMER"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID_OF_THE_STOCK_IT_BELONGS_TO"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_CUSTOMER"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID_OF_THE_STOCK_IT_BELONGS_TO"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all orders.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/orders</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>Page</td>
+<td>Integer</td>
+<td>False</td>
+<td>0</td>
+<td>The page index from 0</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Integer</td>
+<td>False</td>
+<td>20</td>
+<td>Page size</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+</aside>
+<h2 id='get-a-specific-order'>Get a Specific Order</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_CUSTOMER"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID_OF_THE_STOCK_IT_BELONGS_TO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific order with id = 1</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/orders/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>The ID of the order to retrieve</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+</aside>
+<h2 id='search-orders-by-parameters'>Search Orders by Parameters</h2>
+<blockquote>
+<p>The response JSON structured like this, shows all orders belongs to customer <code>FOO</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FOO"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">23333</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FOO"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12345</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all orders that satisfy given parameters</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/orders</code></p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<p>Your should query with at least one parameter from this list.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>customer_id</td>
+<td>String</td>
+<td>False</td>
+<td>-</td>
+<td>Username of the customer</td>
+</tr>
+<tr>
+<td>address_id</td>
+<td>Integer</td>
+<td>False</td>
+<td>-</td>
+<td>Destination address of this order</td>
+</tr>
+<tr>
+<td>trackingId</td>
+<td>String</td>
+<td>False</td>
+<td>-</td>
+<td>Tracking ID of a shipped order</td>
+</tr>
+<tr>
+<td>stock_id</td>
+<td>Integer</td>
+<td>False</td>
+<td>-</td>
+<td>The stock ID it belongs to</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+</aside>
+<h2 id='create-an-order'>Create an Order</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"quantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"createdAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"updatedAt"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-1 3:00 PM GMT+1:00"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"customer_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"USERNAME_OF_CUSTOMER"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address_id"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"stock_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ID_OF_THE_STOCK_IT_BELONGS_TO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"trackingId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"carrierName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"SF-Express"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a new order.</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>POST http://example.com/api/v1/orders</code></p>
+<h3 id='query-parameters-3'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>product_id</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>ID of the product it belongs to</td>
+</tr>
+<tr>
+<td>quantity</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>Quantity of this order</td>
+</tr>
+<tr>
+<td>customer_id</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Customer username who creates this order</td>
+</tr>
+<tr>
+<td>address_id</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>Destination address ID from address book</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>CUSTOMER</code> role before using this API
+</aside>
+<h1 id='generals'>Generals</h1><h2 id='standard-response-format'>Standard Response Format</h2>
+<blockquote>
+<p>The response JSON structured like this</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>All responses has same general structure</p>
+<h3 id='response-parameters'>Response Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>responseId</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>The UUID of this response</td>
+</tr>
+<tr>
+<td>success</td>
+<td>Boolean</td>
+<td>True</td>
+<td>-</td>
+<td>The status flag that indicates whether your API call is success.</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Any</td>
+<td>True</td>
+<td>null</td>
+<td>The message body of this response, which can be any object that supported by JSON</td>
+</tr>
+</tbody></table>
+<h2 id='http-status-codes'>HTTP Status Codes</h2><h3 id='success'>Success</h3>
+<table><thead>
+<tr>
+<th>Success Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>200</td>
+<td>OK -- Standard response for successful HTTP requests</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Created -- The request has been fulfilled, resulting in the creation of a new resource.</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Accepted — The request has been accepted for processing, but the processing has not been completed.</td>
+</tr>
+</tbody></table>
+<h3 id='errors'>Errors</h3>
+<p>The LLZW API uses the following error codes:</p>
 
 <table><thead>
 <tr>
@@ -451,11 +1440,11 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 </tr>
 <tr>
 <td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
+<td>Unauthorized -- Your are unauthorized.</td>
 </tr>
 <tr>
 <td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
+<td>Forbidden — You do not have privilege to perform this request.</td>
 </tr>
 <tr>
 <td>404</td>
@@ -471,7 +1460,7 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 </tr>
 <tr>
 <td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
+<td>Gone -- The object requested has been removed from our servers.</td>
 </tr>
 <tr>
 <td>418</td>
@@ -495,8 +1484,6 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
           </div>
       </div>
