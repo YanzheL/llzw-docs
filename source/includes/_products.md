@@ -127,7 +127,7 @@ introduction | String | True | - | Introduction of this product
 price | Float | True | - | Price of this product 
 ca | String | True | - | Certificate authority name 
 certId | String | True | - | Qualification certificate id 
-maxDeliveryHours | String | False | 72 | Max delivery hours allowed of this product 
+maxDeliveryHours | Integer | False | 72 | Max delivery hours allowed of this product 
 
 <aside class="notice">
 Remember — You must be authenticated with <code>SELLER</code> role before using this API
