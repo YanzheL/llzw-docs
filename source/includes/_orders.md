@@ -49,8 +49,9 @@ Page | Integer | False | 0 | The page index from 0
 Size | Integer | False | 20 | Page size 
 
 <aside class="notice">
-Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API
 </aside>
+
 ## Get a Specific Order
 
 > The response JSON structured like this:
@@ -86,8 +87,9 @@ Parameter | Type | Required | Default | Description
 ID | Integer | True | - | The ID of the order to retrieve 
 
 <aside class="notice">
-Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API
 </aside>
+
 
 ## Search Orders by Parameters
 
@@ -142,7 +144,7 @@ trackingId | String | False | - | Tracking ID of a shipped order
 stock_id | Integer | False | - | The stock ID it belongs to 
 
 <aside class="notice">
-Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API
 </aside>
 
 ## Create an Order

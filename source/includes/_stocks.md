@@ -159,7 +159,7 @@ carrierName | String | False | - | Carrier Name of this shipment
 valid | Boolean | False | - | The status of this stock 
 
 <aside class="notice">
-Remember — You must be authenticated with <code>SELLER</code> or <code>USER</code> role before using this API
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API
 </aside>
 
 ## Create a Stock
