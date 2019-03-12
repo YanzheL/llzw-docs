@@ -45,8 +45,8 @@ This endpoint retrieves all orders.
 
 Parameter | Type | Required | Default | Description 
 --------- | ------- | -----------|--------- |--------- 
-Page | Integer | False | 0 | The page index from 0 
-Size | Integer | False | 20 | Page size 
+page | Integer | False | 0 | The page index from 0 
+size | Integer | False | 20 | Page size 
 
 <aside class="notice">
 Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API

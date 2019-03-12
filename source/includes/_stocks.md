@@ -51,8 +51,8 @@ This endpoint retrieves all stocks.
 
 Parameter | Type | Required | Default | Description 
 --------- | ------- | -----------|--------- |--------- 
-Page | Integer | False | 0 | The page index from 0 
-Size | Integer | False | 20 | Page size 
+page | Integer | False | 0 | The page index from 0 
+size | Integer | False | 20 | Page size 
 
 <aside class="notice">
 Remember — You must be authenticated with <code>SELLER</code> role before using this API

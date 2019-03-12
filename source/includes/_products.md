@@ -49,8 +49,8 @@ This endpoint retrieves all products.
 
 Parameter | Type | Required | Default | Description 
 --------- | ------- | -----------|--------- |--------- 
-Page | Integer | False | 0 | The page index from 0 
-Size | Integer | False | 20 | Page size 
+page | Integer | False | 0 | The page index from 0 
+size | Integer | False | 20 | Page size 
 
 ## Get a Specific Product
 
