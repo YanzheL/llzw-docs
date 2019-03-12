@@ -14,6 +14,7 @@ includes:
   - products
   - stocks
   - orders
+  - addresses
   - generals
 
 search: true
