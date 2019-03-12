@@ -12,7 +12,7 @@
 }
 ```
 
-All responses has same general structure
+All responses have same general structure
 
 ### Response Parameters
 
