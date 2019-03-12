@@ -302,6 +302,20 @@
               </ul>
           </li>
           <li>
+            <a href="#addresses" class="toc-h1 toc-link" data-title="Addresses">Addresses</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-a-specific-address" class="toc-h2 toc-link" data-title="Get a Specific Address">Get a Specific Address</a>
+                  </li>
+                  <li>
+                    <a href="#search-addresses-by-parameters" class="toc-h2 toc-link" data-title="Search Addresses by Parameters">Search Addresses by Parameters</a>
+                  </li>
+                  <li>
+                    <a href="#create-an-address" class="toc-h2 toc-link" data-title="Create an Address">Create an Address</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#generals" class="toc-h1 toc-link" data-title="Generals">Generals</a>
               <ul class="toc-list-h2">
                   <li>
@@ -1361,6 +1375,178 @@ Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOME
 
 <aside class="notice">
 Remember — You must be authenticated with <code>CUSTOMER</code> role before using this API
+</aside>
+<h1 id='addresses'>Addresses</h1><h2 id='get-a-specific-address'>Get a Specific Address</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FOO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Haidian"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No.XX XXX Road"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100000"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves a specific address</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/addresses/&lt;ID&gt;</code></p>
+<h3 id='url-parameters'>URL Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>ID</td>
+<td>Integer</td>
+<td>True</td>
+<td>-</td>
+<td>The ID of the address to retrieve</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API.
+If you are <code>SELLER</code>, then this address must belong to you or your customers.
+If you are <code>CUSTOMER</code>, then this address must belong to you.
+</aside>
+<h2 id='search-addresses-by-parameters'>Search Addresses by Parameters</h2>
+<blockquote>
+<p>The response JSON structured like this, shows all addresses belongs to customer <code>FOO</code></p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FOO"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Haidian"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No.XX XXX Road"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100000"</span><span class="p">,</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves all orders that satisfy given parameters</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET http://example.com/api/v1/addresses</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<p>Your should query with at least one parameter from this list.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>owner_id</td>
+<td>String</td>
+<td>False</td>
+<td>-</td>
+<td>Username of the owner</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with <code>SELLER</code> or <code>CUSTOMER</code> role before using this API.
+If you are <code>SELLER</code>, then this address must belong to you or your customers from your current orders.
+If you are <code>CUSTOMER</code>, then this address must belong to you.
+</aside>
+<h2 id='create-an-address'>Create an Address</h2>
+<blockquote>
+<p>The response JSON structured like this:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"responseId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"sucess"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"owner_id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FOO"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"province"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Beijing"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"district"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Haidian"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"No.XX XXX Road"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"zip"</span><span class="p">:</span><span class="w"> </span><span class="s2">"100000"</span><span class="p">,</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint creates a new address.</p>
+<h3 id='http-request-3'>HTTP Request</h3>
+<p><code>POST http://example.com/api/v1/addresses</code></p>
+<h3 id='query-parameters-2'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Required</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>owner_id</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Username of the owner</td>
+</tr>
+<tr>
+<td>province</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Province</td>
+</tr>
+<tr>
+<td>city</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>City</td>
+</tr>
+<tr>
+<td>district</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>District</td>
+</tr>
+<tr>
+<td>address</td>
+<td>String</td>
+<td>True</td>
+<td>-</td>
+<td>Detailed address</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>String</td>
+<td>False</td>
+<td>000000</td>
+<td>Zip code</td>
+</tr>
+</tbody></table>
+
+<aside class="notice">
+Remember — You must be authenticated with the user you specified before using this API
 </aside>
 <h1 id='generals'>Generals</h1><h2 id='standard-response-format'>Standard Response Format</h2>
 <blockquote>
