@@ -17,8 +17,8 @@
       "introduction": "INTRODUCTION_OF_THIS_PRODUCT",
       "createdAt": "2019-10-1 3:00 PM GMT+1:00",
       "updatedAt": "2019-10-1 3:00 PM GMT+1:00",
-      "price": "10.00",
-      "maxDeliveryHours": "72",
+      "price": 10.00,
+      "maxDeliveryHours": 72,
       "ca": "CNAS",
       "certId": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     },
@@ -30,8 +30,8 @@
       "introduction": "INTRODUCTION_OF_THIS_PRODUCT",
       "createdAt": "2019-10-1 3:00 PM GMT+1:00",
       "updatedAt": "2019-10-1 3:00 PM GMT+1:00",
-      "price": "10.00",
-      "maxDeliveryHours": "72",
+      "price": 10.00,
+      "maxDeliveryHours": 72,
       "ca": "CNAS",
       "certId": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     }
