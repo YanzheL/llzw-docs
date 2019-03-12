@@ -41,7 +41,7 @@ This endpoint retrieves all orders.
 
 `GET http://example.com/api/v1/orders`
 
-### Query Parameters
+### Request Parameters
 
 Parameter | Type | Required | Default | Description 
 --------- | ------- | -----------|--------- |--------- 
@@ -132,7 +132,7 @@ This endpoint retrieves all orders that satisfy given parameters
 
 `GET http://example.com/api/v1/orders`
 
-### Query Parameters
+### Request Parameters
 
 Your should query with at least one parameter from this list.
 
@@ -175,7 +175,7 @@ This endpoint creates a new order.
 
 `POST http://example.com/api/v1/orders`
 
-### Query Parameters
+### Request Parameters
 
 Parameter | Type | Required | Default | Description 
 --------- | ------- | -----------|--------- |--------- 
