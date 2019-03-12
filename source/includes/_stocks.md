@@ -83,7 +83,7 @@ Remember — You must be authenticated with <code>SELLER</code> role before usin
 }
 ```
 
-This endpoint retrieves a specific product with id = 1
+This endpoint retrieves a specific stock with id = 1
 
 ### HTTP Request
 

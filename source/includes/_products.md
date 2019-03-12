@@ -76,7 +76,7 @@ Size | Integer | False | 20 | Page size
 }
 ```
 
-This endpoint retrieves a specific product with id = 1
+This endpoint retrieves a specific product.
 
 ### HTTP Request
 

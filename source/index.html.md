@@ -24,8 +24,3 @@ search: true
 Welcome to the LLZW API! 
 
 You can use our API to access various API endpoints, which can get information on various products, orders, and stocks in our database.
-
-
-
-
-

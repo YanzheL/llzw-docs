@@ -12,7 +12,7 @@
 }
 ```
 
-This endpoint register a new user.
+This endpoint registers a new user.
 
 ### HTTP Request
 
@@ -40,7 +40,7 @@ role | String | True | - | One of [ 'SELLER', 'USER' ]
 }
 ```
 
-This endpoint retrieves a specific product with id = 1
+This endpoint provides real name verification details for a specific user.
 
 ### HTTP Request
 
@@ -77,7 +77,7 @@ Remember — You must be authenticated with the user you specified before using 
 }
 ```
 
-This endpoint retrieves a specific product with id = 1
+This endpoint updates a specific user's password
 
 ### HTTP Request
 

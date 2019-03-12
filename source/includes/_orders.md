@@ -73,7 +73,7 @@ Remember — You must be authenticated with <code>SELLER</code> or <code>USER</c
 }
 ```
 
-This endpoint retrieves a specific order with id = 1
+This endpoint retrieves a specific order
 
 ### HTTP Request
 
