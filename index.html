@@ -390,7 +390,7 @@
 </span></code></pre>
 <p>This endpoint registers a new user.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>POST http://example.com/api/v1/users</code></p>
+<p><code>POST http://example.com/api/v1/users/register</code></p>
 <h3 id='request-parameters'>Request Parameters</h3>
 <table><thead>
 <tr>
@@ -449,25 +449,7 @@
 </span></code></pre>
 <p>This endpoint provides real name verification details for a specific user.</p>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>PATCH http://example.com/api/v1/users/&lt;USERNAME&gt;</code></p>
-<h3 id='url-parameters'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>USERNAME</td>
-<td>String</td>
-<td>True</td>
-<td>-</td>
-<td>Username</td>
-</tr>
-</tbody></table>
+<p><code>PUT http://example.com/api/v1/users/realNameVerification</code></p>
 <h3 id='request-parameters-2'>Request Parameters</h3>
 <table><thead>
 <tr>
@@ -509,7 +491,7 @@
 </tbody></table>
 
 <aside class="notice">
-Remember — You must be authenticated with the user you specified before using this API
+Remember — You must be authenticated before using this API
 </aside>
 <h2 id='update-password'>Update Password</h2>
 <blockquote>
@@ -523,25 +505,7 @@ Remember — You must be authenticated with the user you specified before using 
 </span></code></pre>
 <p>This endpoint updates a specific user&#39;s password</p>
 <h3 id='http-request-3'>HTTP Request</h3>
-<p><code>PATCH http://example.com/api/v1/users/&lt;USERNAME&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Required</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>USERNAME</td>
-<td>String</td>
-<td>True</td>
-<td>-</td>
-<td>Username</td>
-</tr>
-</tbody></table>
+<p><code>PUT http://example.com/api/v1/users/updatePassword</code></p>
 <h3 id='request-parameters-3'>Request Parameters</h3>
 <table><thead>
 <tr>
@@ -569,7 +533,7 @@ Remember — You must be authenticated with the user you specified before using 
 </tbody></table>
 
 <aside class="notice">
-Remember — You must be authenticated with the user you specified before using this API
+Remember — You must be authenticated before using this API
 </aside>
 <h1 id='products'>Products</h1><h2 id='get-all-products'>Get All Products</h2>
 <blockquote>
