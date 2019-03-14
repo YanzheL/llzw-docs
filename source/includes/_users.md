@@ -16,7 +16,7 @@ This endpoint registers a new user.
 
 ### HTTP Request
 
-`POST http://example.com/api/v1/users`
+`POST http://example.com/api/v1/users/register`
 
 ### Request Parameters
 
@@ -44,13 +44,7 @@ This endpoint provides real name verification details for a specific user.
 
 ### HTTP Request
 
-`PATCH http://example.com/api/v1/users/<USERNAME>`
-
-### URL Parameters
-
-Parameter | Type | Required | Default | Description 
---------- | ------- | -----------|--------- |--------- 
-USERNAME | String | True | - | Username 
+`PUT http://example.com/api/v1/users/realNameVerification`
 
 ### Request Parameters
 
@@ -62,8 +56,9 @@ firstName | String | True | - | min length = 1, max length = 20
 lastName | String | True | - | min length = 1, max length = 20 
 
 <aside class="notice">
-Remember — You must be authenticated with the user you specified before using this API
+Remember — You must be authenticated before using this API
 </aside>
+
 
 ## Update Password
 
@@ -81,13 +76,7 @@ This endpoint updates a specific user's password
 
 ### HTTP Request
 
-`PATCH http://example.com/api/v1/users/<USERNAME>`
-
-### URL Parameters
-
-Parameter | Type | Required | Default | Description 
---------- | ------- | -----------|--------- |--------- 
-USERNAME | String | True | - | Username 
+`PUT http://example.com/api/v1/users/updatePassword`
 
 ### Request Parameters
 
@@ -97,6 +86,7 @@ oldPassword | String | True | - | Current password
 newPassword | String | True | - | New password 
 
 <aside class="notice">
-Remember — You must be authenticated with the user you specified before using this API
+Remember — You must be authenticated before using this API
 </aside>
+
 
