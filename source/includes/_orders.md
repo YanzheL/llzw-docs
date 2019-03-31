@@ -181,7 +181,6 @@ Parameter | Type | Required | Default | Description
 --------- | ------- | -----------|--------- |--------- 
 product_id | Integer | True | - | ID of the product it belongs to 
 quantity | Integer | True | - | Quantity of this order 
-customer_id | String | True | - | Customer username who creates this order 
 address_id | Integer | True | - | Destination address ID from address book 
 
 <aside class="notice">
